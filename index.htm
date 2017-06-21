@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<!-- Angular JS -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<!-- BootStrap -->
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+<br><br>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<span class="col-md-4" ng-repeat="item in items" ng-click="setFunc(item)" ng-style="item.styleObj" ng-disabled="item.ngDisabled"><h1>Click</h1></span>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<h1> Score <br>
+			Red: {{redCount}}<br>
+			Blue: {{blueCount}}
+			</h1>
+		</div>
+	</div>
+</div>
+	<script src="standard.js"></script>
+	<link rel="stylesheet" type="text/css" href="custom.css">
+</body>
+</html>
